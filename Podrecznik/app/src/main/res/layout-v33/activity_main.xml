@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        style="@android:style/TextAppearance.DeviceDefault.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:text="Podręcznik do Isela"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wprowadznie"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="30sp"
+            android:drawableBottom="@android:color/holo_red_dark"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rasy"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="30sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Regiony/Lokacje"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="30sp"
+            android:drawableBottom="@android:color/holo_red_dark"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Magie"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="30sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lore"
+            android:textColorHint="@android:color/holo_red_dark"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
