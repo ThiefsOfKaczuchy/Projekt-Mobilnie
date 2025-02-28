@@ -24,6 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:id="@+id/btn_wprowadzenie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Wprowadznie"
@@ -32,6 +33,7 @@
             android:drawableBottom="@android:color/holo_red_dark"
             />
         <Button
+            android:id="@+id/btn_rasy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Rasy"
@@ -39,6 +41,7 @@
             android:textSize="30sp"
             />
         <Button
+            android:id="@+id/btn_regiony_lokacje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Regiony/Lokacje"
@@ -47,6 +50,7 @@
             android:drawableBottom="@android:color/holo_red_dark"
             />
         <Button
+            android:id="@+id/btn_magie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Magie"
@@ -54,6 +58,7 @@
             android:textSize="30sp"
             />
         <Button
+            android:id="@+id/btn_lore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Lore"
