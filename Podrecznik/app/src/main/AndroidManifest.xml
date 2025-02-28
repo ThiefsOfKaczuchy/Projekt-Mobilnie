@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Podrecznik"
         tools:targetApi="31">
         <activity
+            android:name=".Lore"
+            android:exported="false" />
+        <activity
+            android:name=".Magie"
+            android:exported="false" />
+        <activity
+            android:name=".Regiony_lokacje"
+            android:exported="false" />
+        <activity
+            android:name=".Rasy"
+            android:exported="false" />
+        <activity
             android:name=".Wprowadznie"
             android:exported="false" />
         <activity
