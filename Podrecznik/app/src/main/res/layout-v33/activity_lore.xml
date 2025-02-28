@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".lore.Lore">
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lore"
@@ -18,12 +17,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:id="@+id/btn_historia_cesarzowej"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Historia Cesarzowej - córką prostytutki była"
             android:textColorHint="@color/white"
             />
         <Button
+            android:id="@+id/btn_wielka_wojna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Wielka Wojna - WIELKA była"

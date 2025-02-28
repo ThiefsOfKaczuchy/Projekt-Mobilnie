@@ -6,10 +6,47 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Rasy">
+    tools:context=".rasy.Rasy">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rasy"
         style="@android:style/TextAppearance.DeviceDefault.Headline"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/btn_rasa_czlowiek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Człowiek - ma parę nóg, rąk, 5 palcy u każdej z kończyn"
+            android:textColorHint="@android:color/holo_blue_bright"
+            />
+        <Button
+            android:id="@+id/btn_rasa_iratyjczycy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Iratyjczycy - ma parę nóg, rąk, 5 palcy u każdej z kończyn"
+            android:textColorHint="@android:color/holo_blue_bright"
+            />
+        <Button
+            android:id="@+id/btn_rasa_heneri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Heneri - ma parę nóg, rąk, 5 palcy u każdej z kończyn"
+            android:textColorHint="@android:color/holo_blue_bright"
+            />
+        <Button
+            android:id="@+id/btn_rasa_aratyjczycy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Aratyjczycy - ma parę nóg, rąk, 5 palcy u każdej z kończyn"
+            android:textColorHint="@android:color/holo_blue_bright"
+            />
+
+    </LinearLayout>
 </LinearLayout>

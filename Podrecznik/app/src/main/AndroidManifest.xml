@@ -13,19 +13,58 @@
         android:theme="@style/Theme.Podrecznik"
         tools:targetApi="31">
         <activity
-            android:name=".Lore"
+            android:name=".regiony_lokacje.opisy.Region_lokacja_aratja"
             android:exported="false" />
         <activity
-            android:name=".Magie"
+            android:name=".regiony_lokacje.opisy.Region_lokacja_iratia"
             android:exported="false" />
         <activity
-            android:name=".Regiony_lokacje"
+            android:name=".regiony_lokacje.opisy.Region_lokacja_ziemia"
             android:exported="false" />
         <activity
-            android:name=".Rasy"
+            android:name=".rasy.opisy.Rasa_aratyjczycy"
             android:exported="false" />
         <activity
-            android:name=".Wprowadznie"
+            android:name=".rasy.opisy.Rasa_heneri"
+            android:exported="false" />
+        <activity
+            android:name=".rasy.opisy.Rasa_czlowiek"
+            android:exported="false" />
+        <activity
+            android:name=".magie.opisy.Magia_wzmocnienia"
+            android:exported="false" />
+        <activity
+            android:name=".magie.opisy.Magia_ognia"
+            android:exported="false" />
+        <activity
+            android:name=".magie.opisy.Magia_wody"
+            android:exported="false" />
+        <activity
+            android:name=".magie.opisy.Magia_astralna"
+            android:exported="false" />
+        <activity
+            android:name=".magie.opisy.Magia_wiatru"
+            android:exported="false" />
+        <activity
+            android:name=".lore.historie.Wielka_Wojna"
+            android:exported="false" />
+        <activity
+            android:name=".lore.historie.Historia_Cesarzowej"
+            android:exported="false" />
+        <activity
+            android:name=".lore.Lore"
+            android:exported="false" />
+        <activity
+            android:name=".magie.Magie"
+            android:exported="false" />
+        <activity
+            android:name=".regiony_lokacje.Regiony_lokacje"
+            android:exported="false" />
+        <activity
+            android:name=".rasy.Rasy"
+            android:exported="false" />
+        <activity
+            android:name=".wprowadzenie.Wprowadznie"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

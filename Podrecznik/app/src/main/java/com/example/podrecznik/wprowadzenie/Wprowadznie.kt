@@ -1,10 +1,11 @@
-package com.example.podrecznik
+package com.example.podrecznik.wprowadzenie
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.podrecznik.R
 
 class Wprowadznie : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,45 +1,36 @@
 package com.example.podrecznik
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import android.widget.Button
-import android.view.View
-import android.content.Intent
+import com.example.podrecznik.lore.Lore
+import com.example.podrecznik.magie.Magie
+import com.example.podrecznik.rasy.Rasy
+import com.example.podrecznik.wprowadzenie.Wprowadznie
+import com.example.podrecznik.regiony_lokacje.Regiony_lokacje
+
 
 class MainActivity : AppCompatActivity() {
-
+    // linkBtnToActivity(id: R.id.nazwa_id, intent: Intent(this, nazwa_aktywności::class.java))
+    private fun linkBtnToActivity(id: Int, intent: Intent){
+        val btn = findViewById<Button>(id)
+        btn.setOnClickListener {
+            startActivity(intent)
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        var buttonWprowadznie = findViewById<Button>(R.id.btn_wprowadzenie)
-        buttonWprowadznie.setOnClickListener {
-            val intent = Intent(this, Wprowadznie::class.java)
-            startActivity(intent)
-        }
-        var buttonRasy = findViewById<Button>(R.id.btn_rasy)
-        buttonRasy.setOnClickListener {
-            val intent = Intent(this, Rasy::class.java)
-            startActivity(intent)
-        }
-        var buttonRegiony_lokacje = findViewById<Button>(R.id.btn_regiony_lokacje)
-        buttonRegiony_lokacje.setOnClickListener {
-            val intent = Intent(this, Regiony_lokacje::class.java)
-            startActivity(intent)
-        }
-        var buttonMagie = findViewById<Button>(R.id.btn_magie)
-        buttonMagie.setOnClickListener {
-            val intent = Intent(this, Magie::class.java)
-            startActivity(intent)
-        }
-        var buttonLore = findViewById<Button>(R.id.btn_lore)
-        buttonLore.setOnClickListener {
-            val intent = Intent(this, Lore::class.java)
-            startActivity(intent)
-        }
+        linkBtnToActivity(R.id.btn_wprowadzenie, Intent(this, Wprowadznie::class.java))
+        linkBtnToActivity(R.id.btn_rasy, Intent(this, Rasy::class.java))
+        linkBtnToActivity(R.id.btn_regiony_lokacje, Intent(this, Regiony_lokacje::class.java))
+        linkBtnToActivity(R.id.btn_magie, Intent(this, Magie::class.java))
+        linkBtnToActivity(R.id.btn_lore, Intent(this, Lore::class.java))
 
     }
+
 }
+

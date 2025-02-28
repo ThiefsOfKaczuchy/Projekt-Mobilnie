@@ -6,10 +6,40 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Regiony_lokacje">
+    tools:context=".regiony_lokacje.Regiony_lokacje">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Regiony/Lokacje"
         style="@android:style/TextAppearance.DeviceDefault.Headline"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_region_lokacja_ziemia"
+            android:hint="Ziema - ma wodę, góry, drzewa. Jest zielona"
+            android:textColorHint="@android:color/white"
+            android:textSize="20sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_region_lokacja_iratia"
+            android:hint="Iratia - ma wodę, góry, drzewa. Jest zielona"
+            android:textColorHint="@android:color/white"
+            android:textSize="20sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_region_lokacja_aratja"
+            android:hint="Aratja - ma wodę, góry, drzewa. Jest zielona"
+            android:textColorHint="@android:color/white"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
 </LinearLayout>

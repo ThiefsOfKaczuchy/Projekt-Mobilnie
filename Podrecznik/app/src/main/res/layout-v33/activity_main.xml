@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="top|center"
+        android:paddingTop="30dp"
         android:text="Podręcznik do Isela"
         android:textAllCaps="false"
         android:textStyle="bold|italic"
@@ -20,50 +21,55 @@
         />
     <LinearLayout
         android:orientation="vertical"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
         <Button
             android:id="@+id/btn_wprowadzenie"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Wprowadznie"
             android:textColorHint="@android:color/holo_red_dark"
             android:textSize="30sp"
-            android:drawableBottom="@android:color/holo_red_dark"
+            style="@android:style/Widget.Holo.Button.Borderless"
             />
         <Button
             android:id="@+id/btn_rasy"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Rasy"
             android:textColorHint="@android:color/holo_red_dark"
             android:textSize="30sp"
+            style="@android:style/Widget.Holo.Button.Borderless"
             />
         <Button
             android:id="@+id/btn_regiony_lokacje"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Regiony/Lokacje"
             android:textColorHint="@android:color/holo_red_dark"
             android:textSize="30sp"
             android:drawableBottom="@android:color/holo_red_dark"
+            style="@android:style/Widget.Holo.Button.Borderless"
             />
         <Button
             android:id="@+id/btn_magie"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Magie"
             android:textColorHint="@android:color/holo_red_dark"
             android:textSize="30sp"
+            style="@android:style/Widget.Holo.Button.Borderless"
             />
         <Button
             android:id="@+id/btn_lore"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Lore"
             android:textColorHint="@android:color/holo_red_dark"
             android:textSize="30sp"
+            style="@android:style/Widget.Holo.Button.Borderless"
             />
     </LinearLayout>
 
