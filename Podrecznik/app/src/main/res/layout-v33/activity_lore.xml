@@ -6,10 +6,28 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lore">
+    tools:context=".lore.Lore">
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lore"
         style="@android:style/TextAppearance.DeviceDefault.Headline"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Historia Cesarzowej - córką prostytutki była"
+            android:textColorHint="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wielka Wojna - WIELKA była"
+            android:textColorHint="@color/white"
+            />
+    </LinearLayout>
 </LinearLayout>
