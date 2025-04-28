@@ -1,76 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF0E6"
+    android:padding="24dp"
     tools:context=".MainActivity">
 
-
     <TextView
-        style="@android:style/TextAppearance.DeviceDefault.Headline"
-        android:layout_width="match_parent"
+        android:id="@+id/title"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="top|center"
+        android:gravity="center"
         android:paddingTop="30dp"
         android:text="Podręcznik do Isela"
         android:textAllCaps="false"
+        android:textColor="#5C4033"
+        android:textSize="24sp"
+        android:fontFamily="@font/tagesschrift_regular"
         android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        />
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_gravity="start"
+    <Button
+        android:id="@+id/btn_wprowadzenie"
+        style="@android:style/Widget.Holo.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        >
-        <Button
-            android:id="@+id/btn_wprowadzenie"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Wprowadznie"
-            android:textColorHint="@android:color/holo_red_dark"
-            android:textSize="30sp"
-            style="@android:style/Widget.Holo.Button.Borderless"
-            />
-        <Button
-            android:id="@+id/btn_rasy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Rasy"
-            android:textColorHint="@android:color/holo_red_dark"
-            android:textSize="30sp"
-            style="@android:style/Widget.Holo.Button.Borderless"
-            />
-        <Button
-            android:id="@+id/btn_regiony_lokacje"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Regiony/Lokacje"
-            android:textColorHint="@android:color/holo_red_dark"
-            android:textSize="30sp"
-            android:drawableBottom="@android:color/holo_red_dark"
-            style="@android:style/Widget.Holo.Button.Borderless"
-            />
-        <Button
-            android:id="@+id/btn_magie"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Magie"
-            android:textColorHint="@android:color/holo_red_dark"
-            android:textSize="30sp"
-            style="@android:style/Widget.Holo.Button.Borderless"
-            />
-        <Button
-            android:id="@+id/btn_lore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Lore"
-            android:textColorHint="@android:color/holo_red_dark"
-            android:textSize="30sp"
-            style="@android:style/Widget.Holo.Button.Borderless"
-            />
-    </LinearLayout>
+        android:fontFamily="@font/tagesschrift_regular"
+        android:hint="Wprowadzenie"
+        android:textColorHint="#5C4033"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toStartOf="@+id/guide_vertical"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
-</LinearLayout>
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:fontFamily="@font/tagesschrift_regular"
+        android:background="#5C403355"
+        app:layout_constraintStart_toStartOf="@id/btn_wprowadzenie"
+        app:layout_constraintTop_toBottomOf="@id/btn_wprowadzenie"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_rasy"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Rasy"
+        android:textColorHint="#5C4033"
+        android:fontFamily="@font/tagesschrift_regular"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="@id/btn_wprowadzenie"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        android:layout_marginTop="12dp"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#5C403355"
+        app:layout_constraintStart_toStartOf="@id/btn_rasy"
+        app:layout_constraintTop_toBottomOf="@id/btn_rasy"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_regiony_lokacje"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Regiony/Lokacje"
+        android:textColorHint="#5C4033"
+        android:fontFamily="@font/tagesschrift_regular"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="@id/btn_rasy"
+        app:layout_constraintTop_toBottomOf="@id/divider2"
+        android:layout_marginTop="12dp"/>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#5C403355"
+        app:layout_constraintStart_toStartOf="@id/btn_regiony_lokacje"
+        app:layout_constraintTop_toBottomOf="@id/btn_regiony_lokacje"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_magie"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Magie"
+        android:textColorHint="#5C4033"
+        android:fontFamily="@font/tagesschrift_regular"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="@id/btn_regiony_lokacje"
+        app:layout_constraintTop_toBottomOf="@id/divider3"
+        android:layout_marginTop="12dp"/>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#5C403355"
+        app:layout_constraintStart_toStartOf="@id/btn_magie"
+        app:layout_constraintTop_toBottomOf="@id/btn_magie"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_lore"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Lore"
+        android:textColorHint="#5C4033"
+        android:fontFamily="@font/tagesschrift_regular"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="@id/btn_magie"
+        app:layout_constraintTop_toBottomOf="@id/divider4"
+        android:layout_marginTop="12dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Podrecznik"
         tools:targetApi="31">
         <activity
+            android:name=".rasy.opisy.Rasa_iratyjczycy1"
+            android:exported="false" />
+        <activity
             android:name=".regiony_lokacje.opisy.Region_lokacja_aratja"
             android:exported="false" />
         <activity
