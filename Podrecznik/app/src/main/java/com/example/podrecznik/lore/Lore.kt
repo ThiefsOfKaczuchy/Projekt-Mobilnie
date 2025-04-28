@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.podrecznik.R
-import com.example.podrecznik.lore.historie.Historia_Cesarzowej
 import com.example.podrecznik.lore.historie.Wielka_Wojna
+import com.example.podrecznik.lore.historie.Historia_Cesarzowej
 
 class Lore : AppCompatActivity() {
     // linkBtnToActivity(id: R.id.nazwa_id, intent: Intent(this, nazwa_aktywności::class.java))
