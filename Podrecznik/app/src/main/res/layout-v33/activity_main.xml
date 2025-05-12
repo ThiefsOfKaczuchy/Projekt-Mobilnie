@@ -134,6 +134,7 @@
         app:layout_constraintStart_toStartOf="@id/btn_magie"
         app:layout_constraintTop_toBottomOf="@id/divider4"
         android:layout_marginTop="12dp"/>
+<<<<<<< HEAD
     <View
         android:id="@+id/divider5"
         android:layout_width="200dp"
@@ -156,6 +157,9 @@
         app:layout_constraintStart_toStartOf="@id/btn_lore"
         app:layout_constraintTop_toBottomOf="@id/divider5"
         android:layout_marginTop="12dp"/>
+=======
+
+>>>>>>> 0a5259aec4219838dfb4e8041dc84e573a647134
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_vertical"
         android:layout_width="wrap_content"

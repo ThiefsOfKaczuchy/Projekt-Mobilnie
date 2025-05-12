@@ -14,16 +14,30 @@
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:fontFamily="@font/tagesschrift_regular"
         android:gravity="center"
         android:paddingTop="40dp"
+=======
+>>>>>>> 0a5259aec4219838dfb4e8041dc84e573a647134
         android:text="Historia Cesarzowej"
         android:textColor="#5C4033"
         android:textSize="28sp"
         android:textStyle="bold|italic"
+<<<<<<< HEAD
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+=======
+        android:fontFamily="@font/tagesschrift_regular"
+        android:typeface="serif"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+>>>>>>> 0a5259aec4219838dfb4e8041dc84e573a647134
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/tagesschrift_regular"
         android:gravity="center"
+<<<<<<< HEAD
         android:paddingTop="16dp"
+=======
+        android:paddingTop="40dp"
+>>>>>>> 0a5259aec4219838dfb4e8041dc84e573a647134
         android:text="Iratyjczycy"
         android:textColor="#5C4033"
         android:textSize="28sp"
@@ -24,6 +28,7 @@
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ScrollView
@@ -48,6 +53,32 @@
             android:textStyle="italic"
             android:typeface="serif"/>
 
+=======
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="502dp"
+            android:fontFamily="@font/tagesschrift_regular"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:text="@string/iratyjczycy_txt"
+            android:textColor="#5C4033"
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintVertical_bias="0.127" />
+>>>>>>> 0a5259aec4219838dfb4e8041dc84e573a647134
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

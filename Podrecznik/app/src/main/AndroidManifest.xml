@@ -13,14 +13,20 @@
         android:theme="@style/Theme.Podrecznik"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".About"
             android:exported="false" />
         <activity
+=======
+>>>>>>> 0a5259aec4219838dfb4e8041dc84e573a647134
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0a5259aec4219838dfb4e8041dc84e573a647134
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -83,7 +89,12 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+<<<<<<< HEAD
             android:exported="false"></activity>
+=======
+            android:exported="false">
+        </activity>
+>>>>>>> 0a5259aec4219838dfb4e8041dc84e573a647134
     </application>
 
 </manifest>
