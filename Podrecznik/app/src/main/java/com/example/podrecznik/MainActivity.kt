@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         linkBtnToActivity(R.id.btn_regiony_lokacje, Intent(this, Regiony_lokacje::class.java))
         linkBtnToActivity(R.id.btn_magie, Intent(this, Magie::class.java))
         linkBtnToActivity(R.id.btn_lore, Intent(this, Lore::class.java))
+        linkBtnToActivity(R.id.btn_about, Intent(this, About::class.java))
 
     }
 

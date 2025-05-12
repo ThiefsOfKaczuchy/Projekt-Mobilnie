@@ -8,18 +8,19 @@
     android:layout_height="match_parent"
     android:background="#FFF0E6"
     android:padding="24dp"
-    tools:context=".wprowadzenie.Wprowadznie">
+    tools:context=".magie.opisy.Magia_wzmocnienia">
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:paddingTop="30dp"
-        android:text="Wprowadzenie"
-        android:textColor="#5C4033"
-        android:textSize="24sp"
-        android:textStyle="bold|italic"
         android:fontFamily="@font/tagesschrift_regular"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:text="Magia Wzmocnienia"
+        android:textColor="#5C4033"
+        android:textSize="28sp"
+        android:textStyle="bold|italic"
         android:typeface="serif"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

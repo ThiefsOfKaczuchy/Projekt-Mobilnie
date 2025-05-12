@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0E6"
+    android:padding="24dp"
+    tools:context=".magie.Magie">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magie"
+        android:textColor="#5C4033"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_magia_astralna"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Astralną - Astra w Valo ma taką"
+        android:textColorHint="#5C4033"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:backgroundTint="#FFF0E6"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/btn_magia_wiatru"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Wiatru - ale piździ"
+        android:textColorHint="#5C4033"
+        android:textSize="18sp"
+        android:fontFamily="@font/tagesschrift_regular"
+        android:typeface="serif"
+        android:backgroundTint="#FFF0E6"
+        app:layout_constraintTop_toBottomOf="@id/btn_magia_astralna"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_magia_wody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Wody - robi plum"
+        android:textColorHint="#5C4033"
+        android:textSize="18sp"
+        android:fontFamily="@font/tagesschrift_regular"
+        android:typeface="serif"
+        android:backgroundTint="#FFF0E6"
+        app:layout_constraintTop_toBottomOf="@id/btn_magia_wiatru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_magia_ognia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ognia - PIECZE K#@WA"
+        android:textColorHint="#5C4033"
+        android:textSize="18sp"
+        android:fontFamily="@font/tagesschrift_regular"
+        android:typeface="serif"
+        android:backgroundTint="#FFF0E6"
+        app:layout_constraintTop_toBottomOf="@id/btn_magia_wody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_magia_wzmocnienia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFF0E6"
+        android:hint="Wzmocnienia - ale SIGMA"
+        android:textColorHint="#5C4033"
+        android:textSize="18sp"
+        android:fontFamily="@font/tagesschrift_regular"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_magia_ognia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
